@@ -9,7 +9,7 @@ export default function Output({
   setService,
   setFriend,
 }) {
-  const tip = (Number(friend) + Number(service)) / 2;
+  const tip = bill * ((friend + service) / 2 / 100);
   return (
     <div>
       {bill !== 0 || friend !== 0 || service !== 0 ? (
